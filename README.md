@@ -45,7 +45,7 @@ terraform init
 terraform plan 
 
 # 4. Apply the configuration:
-terraform apply me"
+terraform apply 
 
 # 5. Outputs
 Terraform will display:
@@ -59,4 +59,5 @@ Terraform destroy
 No Azure credentials stored in code.
 Terraform state files are excluded from Git.
 Infrastructure is parameterized using variables.
+
 
