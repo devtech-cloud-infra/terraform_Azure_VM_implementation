@@ -12,7 +12,6 @@ resource "azurerm_network_interface" "nic" {
       subnet_id = azurerm_subnet.subnet.id
       private_ip_address_allocation = "Dynamic"
     }
-  
 }
 
 resource "azurerm_subnet" "subnet" {
@@ -58,4 +57,5 @@ name = var.vm-name
 
 
 }
+
 
