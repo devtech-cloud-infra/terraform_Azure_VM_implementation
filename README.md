@@ -3,9 +3,11 @@ Azure vm  infra creation using terraform.
 
 # Overview
 
-This project automates the creation of a basic AWS infrastructure that includes:
+This project automates the creation of a basic Azure infrastructure that includes:
 
 VM (Azure virutal machine)
+Azure Subnet
+Azure Virtual network
 
 It is designed for startups, learning, and small production-ready environments.
 
@@ -59,5 +61,6 @@ Terraform destroy
 No Azure credentials stored in code.
 Terraform state files are excluded from Git.
 Infrastructure is parameterized using variables.
+
 
 
