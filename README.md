@@ -1,53 +1,62 @@
-# terraform_AWS_EC2_implementation
-AWS ec2 instance infra creation using terraform.
+# terraform_Azure_vm_implementation
+Azure vm  infra creation using terraform.
 
 # Overview
 
 This project automates the creation of a basic AWS infrastructure that includes:
 
-EC2 Instance (Amazon Linux)
+VM (Azure virutal machine)
 
 It is designed for startups, learning, and small production-ready environments.
 
 # Technologies Used
 
 Terraform
-AWS EC2
-Amazon Linux AMI
+Azure Virtual Machine (VM)
+Azure subnet
+Azure Network inferace
+Azure Virtual Network
+Azure Resource Group
 
 # Prerequisites
 
 Before you begin, ensure you have:
 
-AWS account
-AWS IAM user with required permissions
+Azure account
+Azure subscription
 Terraform installed (v1.5+)
-AWS CLI configured
-Existing AWS key pair
+Azure CLI configured
+
 
 # Deployment Steps
 
 # 1. Clone the Repository
-git clone https://github.com/devtech-cloud-infra/terraform_AWS_EC2_implementation.git
+git clone https://github.com/devtech-cloud-infra/terraform_Azure_VM_implementation.git
 
-cd terraform_AWS_EC2_implementation
+cd terraform_Azure_VM_implementation
 
-# 2. Initialize terraform and aws configure
-aws configure
+# 2. Initialize terraform and azure configure
+az login
+az account show
+az account set --subscription <Subscription ID/Name>
 terraform init
 
 # 3. Review the plan:
-terraform plan -var="key_name=your-key-pair-name"
+terraform plan 
 
 # 4. Apply the configuration:
-terraform apply -var="key_name=your-key-pair-name"
+terraform apply me"
 
 # 5. Outputs
 Terraform will display:
-EC2 Instance Public IP
+vm machine id 
+
+# 6. Destroy Infra
+Terraform destroy
 
 # Security Best Practices
 
-No AWS credentials stored in code.
+No Azure credentials stored in code.
 Terraform state files are excluded from Git.
 Infrastructure is parameterized using variables.
+
